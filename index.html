@@ -1,269 +1,330 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karan Yede</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-  </head>
-  <title >Karan yede </title>
-  <body>
+    <title>Karan Yede - Creative Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Effects -->
+    <div class="bg-gradient"></div>
+    <div class="bg-pattern"></div>
 
-    <div class="scrollToTop-btn">
-      <i class="fas fa-angle-up"></i>
-    </div>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="#home" class="logo">/<</a>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#work">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <header>
-      <a href="#" class="brand">Karan Yede</a>
-      <div class="menu-btn"></div>
-      <div class="navigation">
-        <a href="#main">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#services">Services</a>
-        <a href="#work">Work</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </header>
+    <!-- home section -->
+    <main>
+      <br><br><br>
+        <section id="home" class="hero relative flex flex-col items-center justify-between py-4 lg:py-12">
+            <img alt="Hero" loading="lazy" width="1572" height="795" decoding="async" class="absolute -top-[98px] -z-10" src="/hero.svg"/>
+            <div class="grid grid-cols-1 items-start lg:grid-cols-2 lg:gap-12 gap-y-8">
+                <div class="order-2 lg:order-1 flex flex-col items-start justify-center p-2 pb-20 md:pb-10 lg:pt-10">
+                    <h1 class="text-3xl font-bold leading-10 text-white md:font-extrabold lg:text-[2.6rem] lg:leading-[3.5rem]">
+                        Hello, <br/>
+                        This is <span class="text-pink-500">Karan</span>, I’m a  
+                        <div class="animated-text">
+                            <h6>Engineering Student</h6>
+                            <h6>Graphic Designer</h6>
+                            <h6>Content Creator</h6>
+                        </div>
+                    </h1>
+                    <div class="my-12 flex items-center gap-5">
+                        <a target="_blank" class="transition-all text-pink-500 hover:scale-125 duration-300" href="https://github.com/Karanyede">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a target="_blank" class="transition-all text-pink-500 hover:scale-125 duration-300" href="https://www.linkedin.com/in/karanyede">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a target="_blank" class="transition-all text-pink-500 hover:scale-125 duration-300" href="https://x.com/Krnyede">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <a class="bg-gradient-to-r to-pink-500 from-violet-600 p-[1px] rounded-full transition-all duration-300 hover:from-pink-500 hover:to-violet-600" href="#contact">
+                            <button class="px-3 text-xs md:px-8 py-3 md:py-4 bg-[#0d1224] rounded-full border-none text-center md:text-sm font-medium uppercase tracking-wider text-[#ffff] no-underline transition-all duration-200 ease-out md:font-semibold flex items-center gap-1 hover:gap-3">
+                                <span>Contact me</span>
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="16" width="16">
+                                    <path d="M2 22C2 17.5817 5.58172 14 10 14C14.4183 14 18 17.5817 18 22H2ZM10 13C6.685 13 4 10.315 4 7C4 3.685 6.685 1 10 1C13.315 1 16 3.685 16 7C16 10.315 13.315 13 10 13ZM20 17H24V19H20V17ZM17 12H24V14H17V12ZM19 7H24V9H19V7Z"></path>
+                                </svg>
+                            </button>
+                        </a>
+                        <a class="flex items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold" role="button" target="_blank" href="#">
+                            <span>Get Resume</span>
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="16" width="16">
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2 from-[#0d1224] border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37]">
+                    <div class="flex flex-row">
+                        <div class="h-[1px] w-full bg-gradient-to-r from-transparent via-pink-500 to-violet-600"></div>
+                        <div class="h-[1px] w-full bg-gradient-to-r from-violet-600 to-transparent"></div>
+                    </div>
+                    <div class="px-4 lg:px-8 py-5">
+                        <div class="flex flex-row space-x-2">
+                            <div class="h-3 w-3 rounded-full bg-red-400"></div>
+                            <div class="h-3 w-3 rounded-full bg-orange-400"></div>
+                            <div class="h-3 w-3 rounded-full bg-green-200"></div>
+                        </div>
+                    </div>
+                    <div class="overflow-hidden border-t-[2px] border-indigo-900 px-4 lg:px-8 py-4 lg:py-8">
+                        <code class="font-mono text-xs md:text-sm lg:text-base">
+                            <div class="blink">
+                                <span class="mr-2 text-pink-500">class</span>
+                                <span class="mr-2 text-white">Developer</span>
+                                <span class="text-gray-400"></span>
+                            </div>
+                            <div>
+                                <span class="ml-4 lg:ml-8 mr-2 text-gray-400">private</span>
+                                <span class="mr-2 text-pink-500">final</span>
+                                <span class="ml-4 lg:ml-8 mr-2 text-green-400">String</span>
+                                <span class="ml-4 lg:ml-8 mr-2 text-white">name</span>
+                                <span class="mr-2 text-pink-500">=</span>
+                                <span class="text-gray-400">&#x27;</span>
+                                <span class="text-amber-300">Karan Yede</span>
+                                <span class="text-gray-400">&#x27;</span>
+                                <span class="ml-4 lg:ml-8 mr-2 text-white">;</span>
+                            </div>
+                            <div>
+                                <span class="ml-4 lg:ml-8 mr-2 text-gray-400">private</span>
+                                <span class="mr-2 text-pink-500">final</span>
+                                <span class="ml-4 lg:ml-8 mr-2 text-green-400">String</span>
+                                <span class="ml-4 lg:ml-8 mr-2 text-white">role</span>
+                                <span class="mr-2 text-pink-500">=</span>
+                                <span class="text-gray-400">&#x27;</span>
+                                <span class="text-amber-300">Creative Developer</span>
+                                <span class="text-gray-400">&#x27;</span>
+                                <span class="ml-4 lg:ml-8 mr-2 text-white">;</span>
+                            </div>
+                            <br>
+                            <div>
+                                <span class="ml-2 lg:ml-8 mr-2 text-gray-400">public</span>
+                                <span class="text-pink-500">final</span>
+                                <span class="lg:ml-8 mr-2 text-green-400">String</span>
+                                <span class="ml-8 text-white">getSkills()</span>
+                                <span class="text-gray-400">{</span>
+                            </div>
+                            <div>
+                                <span class="ml-8 lg:ml-16 mr-2 text-orange-400">return</span>
+                                <span class="text-gray-400">new</span>
+                                <span class="ml-4 lg:ml-8 mr-2 text-green-400">String[]</span>
+                                <span class="text-gray-400">{</span><br>
+                                <span class="ml-12 lg:ml-24 text-amber-300">'Web Development'</span>
+                                <span class="text-gray-400">,</span><br>
+                                <span class="ml-12 lg:ml-24 text-amber-300">'Graphic Designing'</span>
+                                <span class="text-gray-400">,</span><br>
+                                <span class="ml-12 lg:ml-24 text-amber-300">'Problem Solving'</span>
+                                <span class="text-gray-400">,</span><br>
+                                <span class="ml-12 lg:ml-24 text-amber-300">'Content Creation'</span>
+                                <span class="text-gray-400">,</span><br>
+                                <span class="ml-12 lg:ml-24 text-amber-300">'Team Management'</span>
+                                <span class="text-gray-400">,</span>
+                                <br>
+                                <span class="ml-8 lg:ml-16 mr-2 text-gray-400">}</span><br>
+                                <span class="ml-4 lg:ml-8 mr-2 text-gray-400">}</span>
+                            </div>
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section class="main" id="main">
-      <div class="content">
-        <h2>Hello world, I'm<br><span>Karan Yede</span></h2>
-        <div class="animated-text">
-          <h3>Student</h3>
-          <h3>Engineering Aspirant</h3>
-          <h3>Tech Enthusiasts</h3>
-        </div>
-        <a href="#work" class="btn">See My Work</a>
-        <div class="media-icons">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/_karanyede/"><i class="fab fa-instagram"></i></a>
-          <a href="https://x.com/krnyede"><i class="fab fa-twitter"></i></a>
-        </div>
-      </div>
-    </section>
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="title reveal">
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="content">
+                <div class="column col-left reveal">
+                    <div class="img-card">
+                        <img src="/profile.jpg" alt="">
+                    </div>
+                </div>
+                <div class="column col-right reveal">
+                    <h2 class="content-title">Hey There! I'm Karan Yede</h2>
+                    <p class="paragraph-text">Engineering IT Student on a Journey to Expand My Knowledge and Grow My Career. Fueling My Passion with Logic and Technology. I am a Young Tech Enthusiast Crafting Solutions, Designing Tomorrow. From Algorithms to Art: Learning, Creating, and Connecting the Bytes!<br><br>As a creative enthusiast, I enjoy writing, reading, painting, and exploring digital arts. I'm passionate about crafting engaging content that connects with readers and sparks their imagination. I'm always seeking new opportunities to learn and push the boundaries of my creativity. Let's connect and explore the endless possibilities of creative expression together.</p>
+                    <a href="#work" class="btn">See More</a>
+                </div>
+            </div>
+        </section>
 
-    <section class="about" id="about">
-      <div class="title reveal">
-        <h2 class="section-title">About Me</h2>
-      </div>
-      <div class="content">
-        <div class="column col-left reveal">
-          <div class="img-card">
-            <img src="img1.jpg" alt="Image Missing">
-          </div>
-        </div>
-        <div class="column col-right reveal">
-          <h2 class="content-title">Hey There! I'm Karan Yede</h2>
-          <p class="paragraph-text">Engineering IT Student on a Journey to Expand My Knowledge and Grow My Career. Fueling My Passion with Logic and Technology. I am a Young Tech Enthusiast Crafting Solutions, Designing Tomorrow. From Algorithms to Art: Learning, Creating, and Connecting the Bytes!"<br><br>As a creative enthusiast, I enjoy writing, reading, painting, and exploring digital arts. I'm passionate about crafting engaging content that connects with readers and sparks their imagination. I'm always seeking new opportunities to learn and push the boundaries of my creativity. Let's connect and explore the endless possibilities of creative expression together. </p>
-          <a href="#work" class="btn">See More</a>
-        </div>
-      </div>
-    </section>
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <div class="title reveal">
+                <h2 class="section-title">My Skills</h2>
+            </div>
+            <div class="content">
+                <div class="column col-left reveal">
+                    <h2 class="content-title">My Skills and Experiences</h2>
+                    <p>My journey is a fusion of logic and imagination, where every challenge is an opportunity to excel. Aspiring engineer with a knack for creative problem solving. Passionate about graphic design, coding, and constant growth. Let's connect and embark on a journey of limitless exploration and innovation!</p>
+                    <a href="#work" class="btn">See More</a>
+                </div>
+                <div class="column col-right reveal">
+                    <div class="bar">
+                        <div class="info">
+                            <span>HTML</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span>CSS</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="line css"></div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span>Python</span>
+                            <span>30%</span>
+                        </div>
+                        <div class="line javascript"></div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span>C++</span>
+                            <span>25%</span>
+                        </div>
+                        <div class="line jquery"></div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span>Java</span>
+                            <span>20%</span>
+                        </div>
+                        <div class="line php"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section class="skills" id="skills">
-      <div class="title reveal">
-        <h2 class="section-title">My Skills</h2>
-      </div>
-      <div class="content">
-        <div class="column col-left reveal">
-          <h2 class="content-title">My Skills and Experiences</h2>
-          <p>My journey is a fusion of logic and imagination, where every challenge is an opportunity to excel. Aspiring engineer with a knack for creative problem solving.  Passionate about graphic design, coding, and constant growth.Let's connect and embark on a journey of limitless exploration and innovation!".</p>
-          <a href="#work" class="btn">See More</a>
-        </div>
-        <div class="column col-right reveal">
-          <div class="bar">
-            <div class="info">
-              <span>HTML</span>
-              <span>60%</span>
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <div class="title reveal">
+                <h2 class="section-title">My Interests</h2>
             </div>
-            <div class="line html"></div>
-          </div>
-          <div class="bar">
-            <div class="info">
-              <span>JavaScript</span>
-              <span>50%</span>
+            <div class="content">
+                <div class="card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Web Development</h3>
+                        <p>I'm currently mastering HTML, CSS, and JavaScript for web development. These languages are the building blocks of dynamic websites, allowing me to bring innovative ideas to life online.</p>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-file-code"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Web Designing</h3>
+                        <p>In my journey as a web designer, I'm learning HTML, CSS, and JavaScript. These languages help me create visually appealing and interactive websites that captivate users and solve real-world problems.</p>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-object-group"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Editing</h3>
+                        <p>I enjoy both photo and video editing, occasionally dedicating time to editing projects to enhance my creative skills.</p>
+                    </div>
+                </div>
             </div>
-            <div class="line css"></div>
-          </div>
-          <div class="bar">
-            <div class="info">
-              <span>Python</span>
-              <span>30%</span>
-            </div>
-            <div class="line javascript"></div>
-          </div>
-          <div class="bar">
-            <div class="info">
-              <span>C language</span>
-              <span>30%</span>
-            </div>
-            <div class="line jquery"></div>
-          </div>
-          <div class="bar">
-            <div class="info">
-              <span>C++</span>
-              <span>20%</span>
-            </div>
-            <div class="line php"></div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <section class="services" id="services">
-      <div class="title reveal">
-        <h2 class="section-title">My Interests</h2>
-        <p></p>
-      </div>
-      <div class="content">
-        <div class="card reveal">
-          <div class="service-icon">
-            <i class="fas fa-palette"></i>
-          </div>
-          <div class="info">
-            <h3>Web Development</h3>
-            <p>I'm currently mastering HTML, CSS, and JavaScript for web development. These languages are the building blocks of dynamic websites, allowing me to bring innovative ideas to life online.</p>
-          </div>
-        </div>
-        <div class="card reveal">
-          <div class="service-icon">
-            <i class="fas fa-file-code"></i>
-          </div>
-          <div class="info">
-            <h3>Web Designing</h3>
-            <p>In my journey as a web designer, I'm learning HTML, CSS, and JavaScript. These languages help me create visually appealing and interactive websites that captivate users and solve real-world problems..</p>
-          </div>
-        </div>
-        <div class="card reveal">
-          <div class="service-icon">
-            <i class="fas fa-object-group"></i>
-          </div>
-          <div class="info">
-            <h3>Editing</h3>
-            <p>I enjoy both photo and video editing, occasionally dedicating time to editing projects to enhance my creative skills.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+        <!-- Projects Section -->
+        <section class="work" id="work">
+            <div class="title reveal">
+              <h2 class="section-title">My Work</h2>
+            </div>
+            <div class="content">
+              <div class="card reveal">
+                <div class="card-img">
+                  <img src="a3.jpg" alt="">
+                </div>
+              </div>
+              <div class="card reveal">
+                <div class="card-img">
+                  <img src="a6.jpg" alt="">
+                </div>
+              </div>
+              <div class="card reveal">
+                <div class="card-img">
+                  <img src="a1.jpg" alt="">
+                </div>
+              </div>
+              <div class="card reveal">
+                <div class="card-img">
+                  <img src="a2.jpg" alt="">
+                </div>
+              </div>
+              <div class="card reveal">
+                <div class="card-img">
+                  <img src="a4.jpg" alt="">
+                </div>
+              </div>
+              <div class="card reveal">
+                <div class="card-img">
+                  <img src="a7.jpg" alt="">
+                </div>
+              </div>
+              <div class="title reveal">
+                <a href="#work" class="btn">See All</a>
+              </div>
+            </div>
+          </section>
 
-    <section class="work" id="work">
-      <div class="title reveal">
-        <h2 class="section-title">My Work</h2>
-      </div>
-      <div class="content">
-        <div class="card reveal">
-          <div class="card-img">
-            <img src="a3.jpg" alt="">
-          </div>
-        </div>
-        <div class="card reveal">
-          <div class="card-img">
-            <img src="a6.jpg" alt="">
-          </div>
-        </div>
-        <div class="card reveal">
-          <div class="card-img">
-            <img src="a1.jpg" alt="">
-          </div>
-        </div>
-        <div class="card reveal">
-          <div class="card-img">
-            <img src="a2.jpg" alt="">
-          </div>
-        </div>
-        <div class="card reveal">
-          <div class="card-img">
-            <img src="a4.jpg" alt="">
-          </div>
-        </div>
-        <div class="card reveal">
-          <div class="card-img">
-            <img src="a7.jpg" alt="">
-          </div>
-        </div>
-        <div class="title reveal">
-          <a href="#work" class="btn">See All</a>
-        </div>
-      </div>
-    </section>
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="title reveal">
+                    <h2 class="section-title">Get In Touch</h2>
+                </div>
+                <form class="contact-form glass-card" action="https://formsubmit.co/info.karanyede@gmail.com" method="POST">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="glass-button">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
-    <section class="contact" id="contact">
-      <div class="title reveal">
-        <h2 class="section-title">Contact Me</h2>
-      </div>
-      <div class="content">
-        <div class="row">
-          <div class="card reveal">
-            <div class="contact-icon">
-              <i class="fas fa-map-marker-alt"></i>
-            </div>
-            <div class="info">
-              <h3>Address</h3>
-              <span>Sejgaon(MIDC), Gondia-441614</span>
-            </div>
-          </div>
-          <div class="card reveal">
-            <div class="contact-icon">
-              <i class="fas fa-phone"></i>
-            </div>
-            <div class="info">
-              <h3>Phone</h3>
-              <span>+91 9604467093</span>
-            </div>
-          </div>
-          <div class="card reveal">
-            <div class="contact-icon">
-              <i class="fas fa-envelope"></i>
-            </div>
-            <div class="info">
-              <h3>Email Address</h3>
-              <span>info.karanyede@email.com</span>
-            </div>
-          </div>
-          <div class="card reveal">
-            <div class="contact-icon">
-              <i class="fas fa-globe"></i>
-            </div>
-            <div class="info">
-              <h3>Website</h3>
-              <span> https://karanyede.github.io/Profile/ </span>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="contact-form reveal">
-
-<section class="contact" id="contact">
-  <div class="content">
-    <div class="row">
-      <div class="contact-form">
-        <h3>Send Message</h3>
-        <form action="https://formsubmit.co/info.karanyede@gmail.com" method="POST">
-          <input type="hidden" name="_next" value="YOUR_SUCCESS_PAGE_URL">
-          <input type="hidden" name="_captcha" value="false">
-          <div class="input-box">
-            <input type="text" name="name" placeholder="Name" required>
-          </div>
-          <div class="input-box">
-            <input type="email" name="email" placeholder="Email" required>
-          </div>
-          <div class="input-box">
-            <textarea name="message" placeholder="Message" required></textarea>
-          </div>
-          <div class="input-box">
-            <input type="submit" class="send-btn" value="Send">
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-              
     <footer class="footer">
-      <span class="footer-title">Karan Yede</span>
-      <p>Copyright @2023 <a href="#">Kαɾαɳ Yєᴅє</a>. All Rights Reserved.</p>
+        <span class="footer-title">Karan Yede</span>
+        <p>Copyright @2023 <a href="#">Kαɾαɳ Yєᴅє</a>. All Rights Reserved. </p>
     </footer>
-<script src="script.js"></script></body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="//code.tidio.co/wxketw6kwfgmacy8uoeou5qqrx7sac0k.js" async></script>
+    <script src="script.js"></script>
+</body>
 </html>
